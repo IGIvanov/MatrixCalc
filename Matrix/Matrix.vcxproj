@@ -118,10 +118,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Library.cpp" />
+    <ClCompile Include="AddDelRowColumn.cpp" />
+    <ClCompile Include="CheckTextBox.cpp" />
+    <ClCompile Include="CloseForm.cpp" />
+    <ClCompile Include="InitDelMatrix.cpp" />
+    <ClCompile Include="NumberMultDev.cpp" />
+    <ClCompile Include="PrintMatrix.cpp" />
+    <ClCompile Include="SumDiffMatrix.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header.hpp" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

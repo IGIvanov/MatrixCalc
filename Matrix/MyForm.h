@@ -1,6 +1,7 @@
 #pragma once
-#include <Windows.h> 
-#include<iostream>
+
+#ifndef MYFORM_H
+#define MYFORM_H
 
 namespace Matrix {
 
@@ -779,12 +780,12 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			// 
 			this->dataGridView4->AllowUserToAddRows = false;
 			this->dataGridView4->AllowUserToOrderColumns = true;
-			this->dataGridView4->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
 			this->dataGridView4->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView4->ColumnHeadersVisible = false;
 			this->dataGridView4->Location = System::Drawing::Point(342, 70);
 			this->dataGridView4->Name = L"dataGridView4";
+			this->dataGridView4->ReadOnly = true;
 			this->dataGridView4->RowHeadersVisible = false;
 			this->dataGridView4->RowHeadersWidth = 51;
 			this->dataGridView4->RowTemplate->Height = 24;
@@ -1475,26 +1476,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 	//Удаление начальных массивов перед закрытием формы
 	private: System::Void MyForm_FormClosing(System::Object^ sender, System::Windows::Forms::FormClosingEventArgs^ e);
 	
-
 };
 }
 
-void AddColumnRow(System::Windows::Forms::DataGridView^, System::Windows::Forms::TextBox^, System::Windows::Forms::TextBox^, int*, int*);
-
-void CreateArray(System::Windows::Forms::DataGridView^, double**, int, int);
-
-void DeleteColumnRow(System::Windows::Forms::DataGridView^);
-
-void DeleteArray(double**, int);
-
-void Summa(double**, double**, double**, int, int);
-
-void Difference(double**, double**, double**, int, int);
-
-void PrintMatrix(System::Windows::Forms::DataGridView^, double**, int, int);
-
-void NumberMultiply(double**, double**, int, int, double*);
-
-void NumberDevide(double**, double**, int, int, double*);
-
-bool CheckTextBox(System::Windows::Forms::TextBox^, double*);
+#endif

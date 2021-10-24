@@ -1,0 +1,3 @@
+C:\Users\ivan1\Desktop\Матричный калькулятор\Matrix\Debug\Matrix.vcxproj.AssemblyReference.cache
+C:\Users\ivan1\Desktop\Матричный калькулятор\Matrix\Debug\Matrix.MyForm.resources
+C:\Users\ivan1\Desktop\Матричный калькулятор\Matrix\Debug\Matrix.vcxproj.GenerateResource.cache
