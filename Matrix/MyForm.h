@@ -1,8 +1,5 @@
 #pragma once
 
-#ifndef MYFORM_H
-#define MYFORM_H
-
 namespace Matrix {
 
 	using namespace System;
@@ -51,8 +48,8 @@ namespace Matrix {
 	private: System::Windows::Forms::TabPage^ tabPage6;
 	private: System::Windows::Forms::TabPage^ tabPage7;
 	private: System::Windows::Forms::TabPage^ tabPage8;
-	private: System::Windows::Forms::Button^ button4;
-	private: System::Windows::Forms::Button^ button3;
+
+
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Label^ label4;
@@ -156,8 +153,6 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
-			this->button4 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label4 = (gcnew System::Windows::Forms::Label());
@@ -288,8 +283,6 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->tabPage1->Controls->Add(this->label20);
 			this->tabPage1->Controls->Add(this->button6);
 			this->tabPage1->Controls->Add(this->button5);
-			this->tabPage1->Controls->Add(this->button4);
-			this->tabPage1->Controls->Add(this->button3);
 			this->tabPage1->Controls->Add(this->button2);
 			this->tabPage1->Controls->Add(this->button1);
 			this->tabPage1->Controls->Add(this->label4);
@@ -313,7 +306,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			// label23
 			// 
 			this->label23->AutoSize = true;
-			this->label23->Location = System::Drawing::Point(371, 290);
+			this->label23->Location = System::Drawing::Point(371, 317);
 			this->label23->Name = L"label23";
 			this->label23->Size = System::Drawing::Size(75, 20);
 			this->label23->TabIndex = 19;
@@ -322,7 +315,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			// label22
 			// 
 			this->label22->AutoSize = true;
-			this->label22->Location = System::Drawing::Point(521, 290);
+			this->label22->Location = System::Drawing::Point(521, 317);
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(88, 20);
 			this->label22->TabIndex = 18;
@@ -331,7 +324,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			// label21
 			// 
 			this->label21->AutoSize = true;
-			this->label21->Location = System::Drawing::Point(25, 287);
+			this->label21->Location = System::Drawing::Point(25, 314);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(75, 20);
 			this->label21->TabIndex = 17;
@@ -340,7 +333,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			// label20
 			// 
 			this->label20->AutoSize = true;
-			this->label20->Location = System::Drawing::Point(175, 287);
+			this->label20->Location = System::Drawing::Point(175, 314);
 			this->label20->Name = L"label20";
 			this->label20->Size = System::Drawing::Size(88, 20);
 			this->label20->TabIndex = 16;
@@ -370,35 +363,11 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button5->UseVisualStyleBackColor = true;
 			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
 			// 
-			// button4
-			// 
-			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->button4->Location = System::Drawing::Point(375, 376);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(300, 40);
-			this->button4->TabIndex = 13;
-			this->button4->Text = L"Считать данные из матрицы B";
-			this->button4->UseVisualStyleBackColor = true;
-			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
-			// 
-			// button3
-			// 
-			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->button3->Location = System::Drawing::Point(29, 378);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(300, 40);
-			this->button3->TabIndex = 12;
-			this->button3->Text = L"Считать данные из матрицы A";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
-			// 
 			// button2
 			// 
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button2->Location = System::Drawing::Point(375, 324);
+			this->button2->Location = System::Drawing::Point(375, 366);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(300, 40);
 			this->button2->TabIndex = 11;
@@ -410,7 +379,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button1->Location = System::Drawing::Point(29, 323);
+			this->button1->Location = System::Drawing::Point(29, 366);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(300, 40);
 			this->button1->TabIndex = 10;
@@ -423,7 +392,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label4->Location = System::Drawing::Point(406, 256);
+			this->label4->Location = System::Drawing::Point(406, 283);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(243, 20);
 			this->label4->TabIndex = 9;
@@ -434,7 +403,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->Location = System::Drawing::Point(62, 256);
+			this->label3->Location = System::Drawing::Point(62, 283);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(242, 20);
 			this->label3->TabIndex = 8;
@@ -444,7 +413,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			// 
 			this->textBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->textBox4->Location = System::Drawing::Point(615, 287);
+			this->textBox4->Location = System::Drawing::Point(615, 314);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(60, 26);
 			this->textBox4->TabIndex = 7;
@@ -453,7 +422,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			// 
 			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->textBox3->Location = System::Drawing::Point(452, 287);
+			this->textBox3->Location = System::Drawing::Point(452, 314);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(60, 26);
 			this->textBox3->TabIndex = 6;
@@ -462,7 +431,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			// 
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->textBox2->Location = System::Drawing::Point(269, 284);
+			this->textBox2->Location = System::Drawing::Point(269, 311);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(60, 26);
 			this->textBox2->TabIndex = 5;
@@ -471,7 +440,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->textBox1->Location = System::Drawing::Point(106, 284);
+			this->textBox1->Location = System::Drawing::Point(106, 311);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(60, 26);
 			this->textBox1->TabIndex = 4;
@@ -506,7 +475,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->dataGridView2->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView2->ColumnHeadersVisible = false;
-			this->dataGridView2->Location = System::Drawing::Point(375, 44);
+			this->dataGridView2->Location = System::Drawing::Point(375, 62);
 			this->dataGridView2->Name = L"dataGridView2";
 			this->dataGridView2->RowHeadersVisible = false;
 			this->dataGridView2->RowHeadersWidth = 51;
@@ -522,7 +491,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->dataGridView1->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->ColumnHeadersVisible = false;
-			this->dataGridView1->Location = System::Drawing::Point(29, 44);
+			this->dataGridView1->Location = System::Drawing::Point(29, 62);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersVisible = false;
 			this->dataGridView1->RowHeadersWidth = 50;
@@ -830,6 +799,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button11->TabIndex = 13;
 			this->button11->Text = L"Очистить результат";
 			this->button11->UseVisualStyleBackColor = true;
+			this->button11->Click += gcnew System::EventHandler(this, &MyForm::button11_Click);
 			// 
 			// button12
 			// 
@@ -841,6 +811,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button12->TabIndex = 12;
 			this->button12->Text = L"Вычислить";
 			this->button12->UseVisualStyleBackColor = true;
+			this->button12->Click += gcnew System::EventHandler(this, &MyForm::button12_Click);
 			// 
 			// radioButton5
 			// 
@@ -897,8 +868,11 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->dataGridView5->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
 			this->dataGridView5->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView5->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView5->ColumnHeadersVisible = false;
 			this->dataGridView5->Location = System::Drawing::Point(341, 91);
 			this->dataGridView5->Name = L"dataGridView5";
+			this->dataGridView5->ReadOnly = true;
+			this->dataGridView5->RowHeadersVisible = false;
 			this->dataGridView5->RowHeadersWidth = 51;
 			this->dataGridView5->RowTemplate->Height = 24;
 			this->dataGridView5->Size = System::Drawing::Size(300, 200);
@@ -918,7 +892,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->tabPage9->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage9->Size = System::Drawing::Size(711, 488);
 			this->tabPage9->TabIndex = 8;
-			this->tabPage9->Text = L"Приведение к треугольному виду";
+			this->tabPage9->Text = L"Приведение к ступенчатому виду";
 			this->tabPage9->UseVisualStyleBackColor = true;
 			// 
 			// button21
@@ -931,6 +905,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button21->TabIndex = 20;
 			this->button21->Text = L"Очистить результат";
 			this->button21->UseVisualStyleBackColor = true;
+			this->button21->Click += gcnew System::EventHandler(this, &MyForm::button21_Click);
 			// 
 			// button22
 			// 
@@ -942,6 +917,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button22->TabIndex = 19;
 			this->button22->Text = L"Вычислить";
 			this->button22->UseVisualStyleBackColor = true;
+			this->button22->Click += gcnew System::EventHandler(this, &MyForm::button22_Click);
 			// 
 			// radioButton15
 			// 
@@ -998,8 +974,11 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->dataGridView8->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
 			this->dataGridView8->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView8->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView8->ColumnHeadersVisible = false;
 			this->dataGridView8->Location = System::Drawing::Point(341, 97);
 			this->dataGridView8->Name = L"dataGridView8";
+			this->dataGridView8->ReadOnly = true;
+			this->dataGridView8->RowHeadersVisible = false;
 			this->dataGridView8->RowHeadersWidth = 51;
 			this->dataGridView8->RowTemplate->Height = 24;
 			this->dataGridView8->Size = System::Drawing::Size(300, 200);
@@ -1032,6 +1011,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button13->TabIndex = 18;
 			this->button13->Text = L"Очистить результат";
 			this->button13->UseVisualStyleBackColor = true;
+			this->button13->Click += gcnew System::EventHandler(this, &MyForm::button13_Click);
 			// 
 			// button14
 			// 
@@ -1043,6 +1023,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button14->TabIndex = 17;
 			this->button14->Text = L"Вычислить";
 			this->button14->UseVisualStyleBackColor = true;
+			this->button14->Click += gcnew System::EventHandler(this, &MyForm::button14_Click);
 			// 
 			// textBox6
 			// 
@@ -1050,6 +1031,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 				static_cast<System::Byte>(204)));
 			this->textBox6->Location = System::Drawing::Point(437, 145);
 			this->textBox6->Name = L"textBox6";
+			this->textBox6->ReadOnly = true;
 			this->textBox6->Size = System::Drawing::Size(122, 38);
 			this->textBox6->TabIndex = 16;
 			// 
@@ -1073,7 +1055,6 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->radioButton7->Name = L"radioButton7";
 			this->radioButton7->Size = System::Drawing::Size(46, 29);
 			this->radioButton7->TabIndex = 14;
-			this->radioButton7->TabStop = true;
 			this->radioButton7->Text = L"B";
 			this->radioButton7->UseVisualStyleBackColor = true;
 			// 
@@ -1086,7 +1067,6 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->radioButton8->Name = L"radioButton8";
 			this->radioButton8->Size = System::Drawing::Size(47, 29);
 			this->radioButton8->TabIndex = 13;
-			this->radioButton8->TabStop = true;
 			this->radioButton8->Text = L"A";
 			this->radioButton8->UseVisualStyleBackColor = true;
 			// 
@@ -1128,6 +1108,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button15->TabIndex = 13;
 			this->button15->Text = L"Очистить результат";
 			this->button15->UseVisualStyleBackColor = true;
+			this->button15->Click += gcnew System::EventHandler(this, &MyForm::button15_Click);
 			// 
 			// button16
 			// 
@@ -1139,6 +1120,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button16->TabIndex = 12;
 			this->button16->Text = L"Вычислить";
 			this->button16->UseVisualStyleBackColor = true;
+			this->button16->Click += gcnew System::EventHandler(this, &MyForm::button16_Click);
 			// 
 			// radioButton9
 			// 
@@ -1192,11 +1174,13 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			// 
 			this->dataGridView6->AllowUserToAddRows = false;
 			this->dataGridView6->AllowUserToOrderColumns = true;
-			this->dataGridView6->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
 			this->dataGridView6->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView6->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView6->ColumnHeadersVisible = false;
 			this->dataGridView6->Location = System::Drawing::Point(341, 91);
 			this->dataGridView6->Name = L"dataGridView6";
+			this->dataGridView6->ReadOnly = true;
+			this->dataGridView6->RowHeadersVisible = false;
 			this->dataGridView6->RowHeadersWidth = 51;
 			this->dataGridView6->RowTemplate->Height = 24;
 			this->dataGridView6->Size = System::Drawing::Size(300, 200);
@@ -1229,6 +1213,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button17->TabIndex = 25;
 			this->button17->Text = L"Очистить результат";
 			this->button17->UseVisualStyleBackColor = true;
+			this->button17->Click += gcnew System::EventHandler(this, &MyForm::button17_Click);
 			// 
 			// button18
 			// 
@@ -1240,6 +1225,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button18->TabIndex = 24;
 			this->button18->Text = L"Вычислить";
 			this->button18->UseVisualStyleBackColor = true;
+			this->button18->Click += gcnew System::EventHandler(this, &MyForm::button18_Click);
 			// 
 			// textBox7
 			// 
@@ -1247,6 +1233,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 				static_cast<System::Byte>(204)));
 			this->textBox7->Location = System::Drawing::Point(444, 138);
 			this->textBox7->Name = L"textBox7";
+			this->textBox7->ReadOnly = true;
 			this->textBox7->Size = System::Drawing::Size(122, 38);
 			this->textBox7->TabIndex = 23;
 			// 
@@ -1270,7 +1257,6 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->radioButton11->Name = L"radioButton11";
 			this->radioButton11->Size = System::Drawing::Size(46, 29);
 			this->radioButton11->TabIndex = 21;
-			this->radioButton11->TabStop = true;
 			this->radioButton11->Text = L"B";
 			this->radioButton11->UseVisualStyleBackColor = true;
 			// 
@@ -1283,7 +1269,6 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->radioButton12->Name = L"radioButton12";
 			this->radioButton12->Size = System::Drawing::Size(47, 29);
 			this->radioButton12->TabIndex = 20;
-			this->radioButton12->TabStop = true;
 			this->radioButton12->Text = L"A";
 			this->radioButton12->UseVisualStyleBackColor = true;
 			// 
@@ -1325,6 +1310,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button19->TabIndex = 20;
 			this->button19->Text = L"Очистить результат";
 			this->button19->UseVisualStyleBackColor = true;
+			this->button19->Click += gcnew System::EventHandler(this, &MyForm::button19_Click);
 			// 
 			// button20
 			// 
@@ -1336,6 +1322,7 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->button20->TabIndex = 19;
 			this->button20->Text = L"Вычислить";
 			this->button20->UseVisualStyleBackColor = true;
+			this->button20->Click += gcnew System::EventHandler(this, &MyForm::button20_Click);
 			// 
 			// radioButton13
 			// 
@@ -1392,8 +1379,11 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 			this->dataGridView7->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
 			this->dataGridView7->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView7->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView7->ColumnHeadersVisible = false;
 			this->dataGridView7->Location = System::Drawing::Point(341, 91);
 			this->dataGridView7->Name = L"dataGridView7";
+			this->dataGridView7->ReadOnly = true;
+			this->dataGridView7->RowHeadersVisible = false;
 			this->dataGridView7->RowHeadersWidth = 51;
 			this->dataGridView7->RowTemplate->Height = 24;
 			this->dataGridView7->Size = System::Drawing::Size(300, 200);
@@ -1449,12 +1439,6 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 	//Вставка указанного количества столбцов и строк в матрицу B
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e);
 	
-	//Записать данные в массив A[][]
-	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e);
-
-	//Записать данные в массив B[][]
-	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e);
-	
 	//Удаление строк и столбцов из матрицы А
 	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e);
 
@@ -1473,10 +1457,45 @@ private: System::Windows::Forms::GroupBox^ groupBox1;
 	//Очистка результата умножения/деления на число
 	private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e);
 
+	//Произведение матриц
+	private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ e);
+
+	//Очистка результата произведения двух матриц
+	private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ e);
+
+	//Приведение матрицы к ступенчатому виду
+	private: System::Void button22_Click(System::Object^ sender, System::EventArgs^ e);
+
+	// Очистка результата приведения матрицы к ступенчатому виду
+	private: System::Void button21_Click(System::Object ^ sender, System::EventArgs ^ e);
+		   
+	//Вычисление определителя
+	private: System::Void button14_Click(System::Object^ sender, System::EventArgs^ e);
+		   
+	//Удаление результата вычисления определителя
+	private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e);
+
+	//Нахождение обратной матрицы
+	private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e);
+		   
+	//Удаление результата вычисления обратной матрицы
+	private: System::Void button15_Click(System::Object^ sender, System::EventArgs^ e);
+
+	//Вычисление ранга матрицы
+	private: System::Void button18_Click(System::Object^ sender, System::EventArgs^ e);
+	
+	//Очистка результата вычисления ранга матрицы
+	private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e);
+		   
+	//Транспонирование матрицы
+	private: System::Void button20_Click(System::Object^ sender, System::EventArgs^ e);
+		   
+	//Очистка результата транспонирования матрицы
+	private: System::Void button19_Click(System::Object^ sender, System::EventArgs^ e);
+		   
 	//Удаление начальных массивов перед закрытием формы
 	private: System::Void MyForm_FormClosing(System::Object^ sender, System::Windows::Forms::FormClosingEventArgs^ e);
-	
+
 };
 }
 
-#endif

@@ -28,7 +28,8 @@ System::Void Matrix::MyForm::button2_Click(System::Object^ sender, System::Event
 //Удаление строк и столбцов из матрицы А
 System::Void Matrix::MyForm::button5_Click(System::Object^ sender, System::EventArgs^ e) {
 	DeleteColumnRow(dataGridView1);
-	A = nullptr;
+	textBox1->Text = L"";
+	textBox2->Text = L"";
 	rowCountA = 0;
 	columnCountA = 0;
 }
@@ -36,29 +37,9 @@ System::Void Matrix::MyForm::button5_Click(System::Object^ sender, System::Event
 //Удаление строк и столбцов из матрицы B
 System::Void Matrix::MyForm::button6_Click(System::Object^ sender, System::EventArgs^ e) {
 	DeleteColumnRow(dataGridView2);
-	B = nullptr;
+	textBox3->Text = L"";
+	textBox4->Text = L"";
 	rowCountB = 0;
 	columnCountB = 0;
 }
 
-void AddColumnRow(System::Windows::Forms::DataGridView^ matrix, int* rowCount, int* columnCount) {
-	if (*rowCount > 0 && *columnCount > 0) {
-		for (int j = 0; j < *columnCount; j++) {
-			matrix->Columns->Add("", "");
-			matrix->AutoResizeColumns();
-		}
-		for (int i = 0; i < *rowCount; i++) {
-			matrix->Rows->Add("", "");
-			matrix->AutoResizeRows();
-		}
-	}
-}
-
-void DeleteColumnRow(System::Windows::Forms::DataGridView^ matrix) {
-	while ((matrix->RowCount - 1) >= 0) {
-		matrix->Rows->RemoveAt(matrix->RowCount - 1);
-	}
-	while ((matrix->ColumnCount - 1) >= 0) {
-		matrix->Columns->RemoveAt(matrix->ColumnCount - 1);
-	}
-}

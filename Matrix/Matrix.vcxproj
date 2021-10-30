@@ -119,12 +119,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AddDelRowColumn.cpp" />
-    <ClCompile Include="CheckTextBox.cpp" />
     <ClCompile Include="CloseForm.cpp" />
-    <ClCompile Include="InitDelMatrix.cpp" />
+    <ClCompile Include="Determinant.cpp" />
+    <ClCompile Include="InverseMatrix.cpp" />
+    <ClCompile Include="Library.cpp" />
+    <ClCompile Include="MatrixMultiply.cpp" />
     <ClCompile Include="NumberMultDev.cpp" />
-    <ClCompile Include="PrintMatrix.cpp" />
+    <ClCompile Include="Rang.cpp" />
+    <ClCompile Include="StepMatrix.cpp" />
     <ClCompile Include="SumDiffMatrix.cpp" />
+    <ClCompile Include="Transposition.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
